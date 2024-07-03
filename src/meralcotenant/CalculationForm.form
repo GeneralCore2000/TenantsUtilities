@@ -92,14 +92,17 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <Component id="tenant1" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
-                          <Component id="tenant6" min="-2" max="-2" attributes="0"/>
-                      </Group>
+                      <Component id="tenant1" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="tenant2" alignment="0" min="-2" max="-2" attributes="0"/>
                       <Component id="tenant3" alignment="0" min="-2" max="-2" attributes="0"/>
                       <Component id="tenant4" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="tenant2" alignment="0" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="computeArea4" min="-2" max="-2" attributes="0"/>
+                      <Component id="computeArea3" min="-2" max="-2" attributes="0"/>
+                      <Component id="computeArea2" min="-2" max="-2" attributes="0"/>
+                      <Component id="computeArea1" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
@@ -111,14 +114,23 @@
                   <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="tenant1" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="tenant6" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="computeArea1" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
-                  <Component id="tenant2" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="tenant2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="computeArea2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
                   <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
-                  <Component id="tenant3" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="tenant3" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="computeArea3" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
                   <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
-                  <Component id="tenant4" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="tenant4" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="computeArea4" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
                   <EmptySpace pref="122" max="32767" attributes="0"/>
               </Group>
           </Group>
@@ -169,15 +181,48 @@
             <Property name="text" type="java.lang.String" value="Tenant 1"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="tenant6">
+        <Component class="javax.swing.JLabel" name="computeArea1">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Arial" size="14" style="1"/>
+              <Font name="Arial" size="14" style="0"/>
             </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="33" green="33" red="33" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Tenant 1"/>
+            <Property name="text" type="java.lang.String" value="CR - PR = Pay + Nawasa = Total Paymane"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="computeArea2">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Arial" size="14" style="0"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="33" green="33" red="33" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Computation area 2"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="computeArea3">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Arial" size="14" style="0"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="33" green="33" red="33" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Computation area 3"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="computeArea4">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Arial" size="14" style="0"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="33" green="33" red="33" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Computation area 4"/>
           </Properties>
         </Component>
       </SubComponents>

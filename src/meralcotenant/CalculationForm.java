@@ -1,10 +1,25 @@
-
 package meralcotenant;
 
 public class CalculationForm extends javax.swing.JFrame {
 
     public CalculationForm() {
         initComponents();
+        start();
+    }
+
+    public void start() {
+        assignTenantsNames();
+    }
+
+    public void assignTenantsNames() {
+        tenant1.setText(TenantsUtility.getTenant1().getText());
+        tenant2.setText(TenantsUtility.getTenant2().getText());
+        tenant3.setText(TenantsUtility.getTenant3().getText());
+        tenant4.setText(TenantsUtility.getTenant4().getText());
+    }
+
+    public void computationReceipt() {
+        
     }
 
     @SuppressWarnings("unchecked")
@@ -18,7 +33,10 @@ public class CalculationForm extends javax.swing.JFrame {
         tenant3 = new javax.swing.JLabel();
         tenant2 = new javax.swing.JLabel();
         tenant1 = new javax.swing.JLabel();
-        tenant6 = new javax.swing.JLabel();
+        computeArea1 = new javax.swing.JLabel();
+        computeArea2 = new javax.swing.JLabel();
+        computeArea3 = new javax.swing.JLabel();
+        computeArea4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -63,9 +81,21 @@ public class CalculationForm extends javax.swing.JFrame {
         tenant1.setForeground(new java.awt.Color(51, 51, 51));
         tenant1.setText("Tenant 1");
 
-        tenant6.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        tenant6.setForeground(new java.awt.Color(51, 51, 51));
-        tenant6.setText("Tenant 1");
+        computeArea1.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        computeArea1.setForeground(new java.awt.Color(51, 51, 51));
+        computeArea1.setText("CR - PR = Pay + Nawasa = Total Paymane");
+
+        computeArea2.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        computeArea2.setForeground(new java.awt.Color(51, 51, 51));
+        computeArea2.setText("Computation area 2");
+
+        computeArea3.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        computeArea3.setForeground(new java.awt.Color(51, 51, 51));
+        computeArea3.setText("Computation area 3");
+
+        computeArea4.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        computeArea4.setForeground(new java.awt.Color(51, 51, 51));
+        computeArea4.setText("Computation area 4");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -74,13 +104,16 @@ public class CalculationForm extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(25, 25, 25)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(tenant1)
-                        .addGap(45, 45, 45)
-                        .addComponent(tenant6))
+                    .addComponent(tenant1)
+                    .addComponent(tenant2)
                     .addComponent(tenant3)
-                    .addComponent(tenant4)
-                    .addComponent(tenant2))
+                    .addComponent(tenant4))
+                .addGap(45, 45, 45)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(computeArea4)
+                    .addComponent(computeArea3)
+                    .addComponent(computeArea2)
+                    .addComponent(computeArea1))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -89,13 +122,19 @@ public class CalculationForm extends javax.swing.JFrame {
                 .addGap(41, 41, 41)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(tenant1)
-                    .addComponent(tenant6))
+                    .addComponent(computeArea1))
                 .addGap(45, 45, 45)
-                .addComponent(tenant2)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(tenant2)
+                    .addComponent(computeArea2))
                 .addGap(45, 45, 45)
-                .addComponent(tenant3)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(tenant3)
+                    .addComponent(computeArea3))
                 .addGap(45, 45, 45)
-                .addComponent(tenant4)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(tenant4)
+                    .addComponent(computeArea4))
                 .addContainerGap(122, Short.MAX_VALUE))
         );
 
@@ -120,12 +159,15 @@ public class CalculationForm extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel Header;
+    private javax.swing.JLabel computeArea1;
+    private javax.swing.JLabel computeArea2;
+    private javax.swing.JLabel computeArea3;
+    private javax.swing.JLabel computeArea4;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel tenant1;
     private javax.swing.JLabel tenant2;
     private javax.swing.JLabel tenant3;
     private javax.swing.JLabel tenant4;
     private javax.swing.JLabel tenant5;
-    private javax.swing.JLabel tenant6;
     // End of variables declaration//GEN-END:variables
 }

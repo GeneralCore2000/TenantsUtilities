@@ -12,7 +12,6 @@ public class sqlConnect {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             con = DriverManager.getConnection("jdbc:mysql://sql12.freesqldatabase.com:3306/sql12717598", "sql12717598", "8PWHPTPPrr");
-            System.out.println("Connected");
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "Database error connection: " + e);
         }
