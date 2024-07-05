@@ -4,11 +4,11 @@ import java.awt.Color;
 import java.text.DecimalFormat;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
+import javax.swing.JTextField;
 
 public final class TenantsUtility extends javax.swing.JFrame {
 
     DecimalFormat df = new DecimalFormat("0.00");
-    DecimalFormat dfPeso = new DecimalFormat("P0.00");
 
     public TenantsUtility() {
         new sqlConnect();
@@ -95,7 +95,6 @@ public final class TenantsUtility extends javax.swing.JFrame {
 
         totalMeralco.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         totalMeralco.setForeground(java.awt.Color.gray);
-        totalMeralco.setText("5788.72");
         totalMeralco.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(0, 0, 0)));
         totalMeralco.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
@@ -111,7 +110,6 @@ public final class TenantsUtility extends javax.swing.JFrame {
 
         kwhField.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         kwhField.setForeground(java.awt.Color.gray);
-        kwhField.setText("477");
         kwhField.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(0, 0, 0)));
         kwhField.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
@@ -130,7 +128,6 @@ public final class TenantsUtility extends javax.swing.JFrame {
 
         totalNawasa.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         totalNawasa.setForeground(java.awt.Color.gray);
-        totalNawasa.setText("774.90");
         totalNawasa.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(0, 0, 0)));
         totalNawasa.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
@@ -156,14 +153,6 @@ public final class TenantsUtility extends javax.swing.JFrame {
         totalNawasa1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         totalNawasa1.setForeground(java.awt.Color.gray);
         totalNawasa1.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(0, 0, 0)));
-        totalNawasa1.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                totalNawasa1FocusGained(evt);
-            }
-            public void focusLost(java.awt.event.FocusEvent evt) {
-                totalNawasa1FocusLost(evt);
-            }
-        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -252,19 +241,14 @@ public final class TenantsUtility extends javax.swing.JFrame {
         jLabel15.setText("ELECTRICITY COST");
 
         pr1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        pr1.setText("00000");
 
         pr2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        pr2.setText("00000");
 
         pr3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        pr3.setText("00000");
 
         pr4.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        pr4.setText("00000");
 
         cr1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        cr1.setText("3742");
         cr1.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(0, 0, 0)));
         cr1.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
@@ -273,7 +257,6 @@ public final class TenantsUtility extends javax.swing.JFrame {
         });
 
         cr2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        cr2.setText("7148");
         cr2.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(0, 0, 0)));
         cr2.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
@@ -282,7 +265,6 @@ public final class TenantsUtility extends javax.swing.JFrame {
         });
 
         cr3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        cr3.setText("7139");
         cr3.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(0, 0, 0)));
         cr3.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
@@ -291,7 +273,6 @@ public final class TenantsUtility extends javax.swing.JFrame {
         });
 
         cr4.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        cr4.setText("12217");
         cr4.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(0, 0, 0)));
         cr4.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
@@ -300,28 +281,20 @@ public final class TenantsUtility extends javax.swing.JFrame {
         });
 
         met3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        met3.setText("00000");
 
         met4.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        met4.setText("00000");
 
         met1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        met1.setText("00000");
 
         met2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        met2.setText("00000");
 
         ad3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        ad3.setText("00000.00");
 
         ad4.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        ad4.setText("00000.00");
 
         ad1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        ad1.setText("00000.00");
 
         ad2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        ad2.setText("00000.00");
 
         calculateButton.setBackground(new java.awt.Color(102, 102, 255));
         calculateButton.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -332,39 +305,22 @@ public final class TenantsUtility extends javax.swing.JFrame {
                 calculateButtonActionPerformed(evt);
             }
         });
-        calculateButton.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyPressed(java.awt.event.KeyEvent evt) {
-                calculateButtonKeyPressed(evt);
-            }
-        });
 
         jLabel16.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel16.setText("TOTAL");
 
         ec1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        ec1.setText("00000.00");
 
         ec2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        ec2.setText("00000.00");
 
         ec3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        ec3.setText("00000.00");
 
         ec4.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        ec4.setText("00000.00");
 
         checker.setEditable(false);
         checker.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         checker.setForeground(java.awt.Color.gray);
         checker.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(0, 0, 0)));
-        checker.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                checkerFocusGained(evt);
-            }
-            public void focusLost(java.awt.event.FocusEvent evt) {
-                checkerFocusLost(evt);
-            }
-        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -497,11 +453,11 @@ public final class TenantsUtility extends javax.swing.JFrame {
     private void nextButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nextButtonActionPerformed
         try {
             if (kwhField.getText().isEmpty() || kwhField.getText().equals("Meralco KWH")) {
-                JOptionPane.showMessageDialog(rootPane, "Fill-up KWH Meralco bill");
+                EMC.errorMessages(1);
             } else if (totalMeralco.getText().isEmpty() || totalMeralco.getText().equals("Meralco Total Bill")) {
-                JOptionPane.showMessageDialog(rootPane, "Fill-up Total Meralco bill");
+                EMC.errorMessages(2);
             } else if (totalNawasa.getText().isEmpty() || totalNawasa.getText().equals("Nawasa Total")) {
-                JOptionPane.showMessageDialog(rootPane, "Fill-up Total Nawasa bill");
+                EMC.errorMessages(3);
             } else {
                 int ask = JOptionPane.showConfirmDialog(rootPane, "Everything is correct?");
                 if (ask == JOptionPane.YES_OPTION) {
@@ -517,12 +473,31 @@ public final class TenantsUtility extends javax.swing.JFrame {
         } catch (Exception e) {
             JOptionPane.showMessageDialog(rootPane, "Numbers only!");
         }
-
     }//GEN-LAST:event_nextButtonActionPerformed
 
     private void calculateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calculateButtonActionPerformed
-        calculate();
+        int kwh = Integer.parseInt(kwhField.getText());
+        double totalM = Double.parseDouble(df.format(Double.parseDouble(totalMeralco.getText())));
+        double nawasaShare = Double.parseDouble(totalNawasa.getText()) / 4;
+        double meralcoRate = totalM / kwh;
+        int meter1 = Integer.valueOf(cr1.getText()) - Integer.valueOf(pr1.getText());
+        int meter2 = Integer.valueOf(cr2.getText()) - Integer.valueOf(pr2.getText());
+        int meter3 = Integer.valueOf(cr3.getText()) - Integer.valueOf(pr3.getText());
+        int meter4 = Integer.valueOf(cr4.getText()) - Integer.valueOf(pr4.getText());
+        int less = kwh - (meter1 + meter2 + meter3 + meter4);
+        meter2 = meter2 + less;
+        double totalMeter1 = meter1 * meralcoRate;
+        double totalMeter2 = meter2 * meralcoRate;
+        double totalMeter3 = meter3 * meralcoRate;
+        double totalMeter4 = meter4 * meralcoRate;
+        double totalPayment1 = totalMeter1 + nawasaShare;
+        double totalPayment2 = totalMeter2 + nawasaShare;
+        double totalPayment3 = totalMeter3 + nawasaShare;
+        double totalPayment4 = totalMeter4 + nawasaShare;
+        double allInAll = Double.parseDouble(df.format((totalPayment1 + totalPayment2 + totalPayment3 + totalPayment4)));
 
+        checker.setText(allInAll + " / " + (Double.parseDouble(totalMeralco.getText()) + Double.parseDouble(totalNawasa.getText())) + "");
+        calculate(meter1, meter2, meter3, meter4, meralcoRate, totalPayment1, totalPayment2, totalPayment3, totalPayment4, allInAll);
     }//GEN-LAST:event_calculateButtonActionPerformed
 
     public static void getNewPreviousReading(int newReading1, int newReading2, int newReading3, int newReading4) {
@@ -545,43 +520,18 @@ public final class TenantsUtility extends javax.swing.JFrame {
         );
     }
 
-    public void calculate() {
-
-        int kwh = Integer.parseInt(kwhField.getText());
-        double totalM = Double.parseDouble(df.format(Double.parseDouble(totalMeralco.getText())));
-        double nawasaShare = Double.parseDouble(totalNawasa.getText()) / 4;
-        double meralcoRate = totalM / kwh;
-
-        int meter1 = Integer.valueOf(cr1.getText()) - Integer.valueOf(pr1.getText());
-        int meter2 = Integer.valueOf(cr2.getText()) - Integer.valueOf(pr2.getText());
-        int meter3 = Integer.valueOf(cr3.getText()) - Integer.valueOf(pr3.getText());
-        int meter4 = Integer.valueOf(cr4.getText()) - Integer.valueOf(pr4.getText());
-        int less = kwh - (meter1 + meter2 + meter3 + meter4);
-        meter2 = meter2 + less;
-
-        double totalMeter1 = meter1 * meralcoRate;
-        double totalMeter2 = meter2 * meralcoRate;
-        double totalMeter3 = meter3 * meralcoRate;
-        double totalMeter4 = meter4 * meralcoRate;
-
-        double totalPayment1 = totalMeter1 + nawasaShare;
-        double totalPayment2 = totalMeter2 + nawasaShare;
-        double totalPayment3 = totalMeter3 + nawasaShare;
-        double totalPayment4 = totalMeter4 + nawasaShare;
-
-        double allInAll = totalPayment1 + totalPayment2 + totalPayment3 + totalPayment4;
-
-        checker.setText(allInAll + " / " + (Double.parseDouble(totalMeralco.getText()) + Double.parseDouble(totalNawasa.getText())) + "");
-
+    public void calculate(int meter1, int meter2, int meter3, int meter4,
+            double meralcoRate, double totalPayment1, double totalPayment2,
+            double totalPayment3, double totalPayment4, double allInAll) {
         try {
             if (cr1.getText().isEmpty()) {
-                JOptionPane.showMessageDialog(rootPane, tenant1.getText() + "'s Current Reading is blank.");
+                EMC.errorMessages(4);
             } else if (cr2.getText().isEmpty()) {
-                JOptionPane.showMessageDialog(rootPane, tenant2.getText() + "'s Current Reading is blank.");
+                EMC.errorMessages(5);
             } else if (cr3.getText().isEmpty()) {
-                JOptionPane.showMessageDialog(rootPane, tenant3.getText() + "'s Current Reading is blank.");
+                EMC.errorMessages(6);
             } else if (cr4.getText().isEmpty()) {
-                JOptionPane.showMessageDialog(rootPane, tenant4.getText() + "'s Current Reading is blank.");
+                EMC.errorMessages(7);
             } else {
                 met1.setText(meter1 + "");
                 met2.setText(meter2 + "");
@@ -598,16 +548,15 @@ public final class TenantsUtility extends javax.swing.JFrame {
                 ec3.setText(df.format(totalPayment3));
                 ec4.setText(df.format(totalPayment4));
 
-                if (Double.parseDouble(totalMeralco.getText()) + Double.parseDouble(totalNawasa.getText()) != allInAll) {
+                if (textFieldDecimalFormat(totalMeralco) + textFieldDecimalFormat(totalNawasa) != allInAll) {
                     calculateButton.setBackground(Color.red);
                     calculateButton.setText("Manual Computation is Required.");
-                    JOptionPane.showMessageDialog(rootPane, "Error: Wrong computation. Manual computation is recommended", "Maching Computation Error", JOptionPane.ERROR_MESSAGE);
+                    EMC.errorMessages(8);
                     if (Double.parseDouble(totalMeralco.getText()) + Double.parseDouble(totalNawasa.getText()) > allInAll) {
-                        JOptionPane.showMessageDialog(rootPane, "Total computed > total bill of Meralco and Nawasa", "Maching Computation Error", JOptionPane.ERROR_MESSAGE);
+                        EMC.errorMessages(9);
                     } else {
-                        JOptionPane.showMessageDialog(rootPane, "Total computed < total bill of Meralco and Nawasa", "Maching Computation Error", JOptionPane.ERROR_MESSAGE);
+                        EMC.errorMessages(10);
                     }
-
                 } else {
                     if (calculateButton.getText().equals("SAVE CURRENT READING")) {
                         int ask = JOptionPane.showConfirmDialog(rootPane, "Save current reading?");
@@ -626,6 +575,12 @@ public final class TenantsUtility extends javax.swing.JFrame {
         }
     }
 
+    public double textFieldDecimalFormat(JTextField number) {
+        double toDouble = 0.00;
+        toDouble = Double.parseDouble(df.format(Double.parseDouble(number.getText())));
+        return toDouble;
+    }
+
     public static JLabel getTenant1() {
         return tenant1;
     }
@@ -641,6 +596,7 @@ public final class TenantsUtility extends javax.swing.JFrame {
     public static JLabel getTenant4() {
         return tenant4;
     }
+
 //DESIGNS
     private void kwhFieldFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_kwhFieldFocusGained
         if (kwhField.getText().equals("Meralco KWH")) {
@@ -692,27 +648,6 @@ public final class TenantsUtility extends javax.swing.JFrame {
         calculateButton.setText("CALCULATE");
         calculateButton.setBackground(Color.decode("#6666FF"));
     }//GEN-LAST:event_cr1KeyPressed
-
-    private void calculateButtonKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_calculateButtonKeyPressed
-        // TODO add your handling code here:
-
-    }//GEN-LAST:event_calculateButtonKeyPressed
-
-    private void totalNawasa1FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_totalNawasa1FocusGained
-        // TODO add your handling code here:
-    }//GEN-LAST:event_totalNawasa1FocusGained
-
-    private void totalNawasa1FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_totalNawasa1FocusLost
-        // TODO add your handling code here:
-    }//GEN-LAST:event_totalNawasa1FocusLost
-
-    private void checkerFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_checkerFocusGained
-        // TODO add your handling code here:
-    }//GEN-LAST:event_checkerFocusGained
-
-    private void checkerFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_checkerFocusLost
-        // TODO add your handling code here:
-    }//GEN-LAST:event_checkerFocusLost
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
