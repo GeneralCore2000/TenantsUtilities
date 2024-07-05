@@ -307,7 +307,7 @@ public final class TenantsUtility extends javax.swing.JFrame {
         });
 
         jLabel16.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel16.setText("TOTAL");
+        jLabel16.setText("TOTAL WITH NAWASA");
 
         ec1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
@@ -365,9 +365,9 @@ public final class TenantsUtility extends javax.swing.JFrame {
                             .addComponent(ad2)
                             .addComponent(jLabel15)))
                     .addComponent(calculateButton, javax.swing.GroupLayout.PREFERRED_SIZE, 345, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(35, 35, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 40, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(checker, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(checker, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel16)
                     .addComponent(ec1)
                     .addComponent(ec2)
